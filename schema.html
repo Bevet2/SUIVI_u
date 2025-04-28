@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Répartition Articles Client</title>
-  
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7fa;
-      margin: 0;
-      padding: 0;
-    }
 
+    body { font-family: Arial, sans-serif; background: #f7f7fa; zoom: 1; }
+@-moz-document url-prefix() {
+  body { zoom: 1; transform: scale(0.8); transform-origin: top left; }
+}
     .centered-schema {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 480px;
-      margin-top: 700px;
-      margin-bottom: 40px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 480px;
+  margin-top: 700px;
+  margin-bottom: 40px;
+}
 
     .grid-large-container {
       display: grid;
@@ -30,11 +27,11 @@
       width: 80vw;
       height: 60vh;
       margin: 0 auto;
+      /* Suppression du cadre rouge */
       border: none;
       position: relative;
       background: transparent;
     }
-
     .label-step {
   font-size: 4em;
   padding: 18px 40px;
@@ -503,12 +500,5 @@ document.addEventListener('mouseout', function(e) {
   }
 });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.body.style.zoom = "80%"; // Dézoom automatique à 80%
-  });
-</script>
-
-
 </body>
 </html>
