@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Répartition Articles Client</title>
+  
   <style>
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7fa;
-  transform: scale(1.8);
-  transform-origin: top left;
-  width: 200vw; /* <-- Largeur 100% écran */
-  height: 200vh; /* <-- Hauteur 100% écran */
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7fa;
+      margin: 0;
+      padding: 0;
+    }
 
     .centered-schema {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 480px;
-  margin-top: 700px;
-  margin-bottom: 40px;
-}
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 480px;
+      margin-top: 700px;
+      margin-bottom: 40px;
+    }
 
     .grid-large-container {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  width: 80vw;
-  height: 60vh;
-  min-width: 1000px;
-  min-height: 700px;
-  margin: 0 auto;
-  border: none;
-  position: relative;
-  background: transparent;
-}
-
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      width: 80vw;
+      height: 60vh;
+      min-width: 1000px;
+      min-height: 700px;
+      margin: 0 auto;
+      border: none;
+      position: relative;
+      background: transparent;
+    }
 
     .label-step {
   font-size: 4em;
@@ -514,5 +505,12 @@ document.addEventListener('mouseout', function(e) {
   }
 });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.zoom = "80%"; // Dézoom automatique à 80%
+  });
+</script>
+
+
 </body>
 </html>
